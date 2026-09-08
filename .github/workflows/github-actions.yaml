@@ -10,8 +10,8 @@ permissions:
   contents: read
 
 jobs:
-  spell-check:
-    name: Check Spelling
+  HTML-Lint-Test:
+    name: HTML Lint test
     runs-on: ubuntu-latest
 
     steps:
@@ -21,12 +21,19 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20'
+        node-version: '24'
         cache: 'npm'
 
     - name: Install dependencies
       run: npm ci
 
-    - name: Run HTML Lint
-      run: npm run lint:html
+    - name: Run HTML Lint 
+      run: npx linthtml 'frontend/*.html'
+
+    - name: Run JS Lint 
+      run: npx eslint frontend/js/*.js
+
+    - name: Run CSS Lint 
+      run:  npx stylelint "frontend/css/*.css"
+
     
