@@ -28,7 +28,8 @@ jobs:
       run: npm ci
 
     - name: Run HTML Lint 
-      run: npx linthtml --init
-      run: npx linthtml 'frontend/*.html'
+      run: |
+        npx linthtml --init
+        npx linthtml 'frontend/*.html'
 
     
