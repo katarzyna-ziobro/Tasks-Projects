@@ -10,8 +10,8 @@ permissions:
   contents: read
 
 jobs:
-  spell-check:
-    name: Check Spelling
+  HTML-Lint-Test:
+    name: HTML Lint test
     runs-on: ubuntu-latest
 
     steps:
