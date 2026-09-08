@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  HTML-Lint-Test:
+  Frontend-Lint-Tests:
     name: HTML Lint test
     runs-on: ubuntu-latest
 
