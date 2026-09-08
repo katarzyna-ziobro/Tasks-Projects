@@ -30,4 +30,10 @@ jobs:
     - name: Run HTML Lint 
       run: npx linthtml 'frontend/*.html'
 
+    - name: Run CSS Lint 
+      run: npx eslint frontend/js/*.js
+
+    - name: Run JS Lint 
+      run:  npx stylelint "frontend/css/*.css"
+
     
