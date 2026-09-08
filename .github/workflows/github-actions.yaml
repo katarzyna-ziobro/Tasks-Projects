@@ -28,5 +28,5 @@ jobs:
       run: npm ci
 
     - name: Run HTML Lint
-        run: npm run lint:html
+      run: npm run lint:html
     
