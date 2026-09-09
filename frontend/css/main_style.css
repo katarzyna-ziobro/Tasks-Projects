@@ -1,7 +1,7 @@
 
 :root {
 	--color_backround: #1b1b1b;
-	--color_highlight: #FFFFFF;
+	--color_highlight: #FFF;
     --color_header: #0f2d61;
     --color_priority1: #791a1a;
     --color_priority2: #a84121c2;
@@ -13,16 +13,12 @@
 
 body {
     background-color: var(--color_backround);
-    border: 0px;
-    margin: 0px;
-    padding: 0px;
 }
 
 .task-item {
     display: flex;
     align-items: center;
-    column-gap: 5px;
-    row-gap: 2px;
+    gap: 5px;
     margin-bottom: 5px;
     margin-top: 5px;
     height: 15px; 
@@ -31,8 +27,7 @@ body {
 .new-task {
     display: flex;
     align-items: center;
-    column-gap: 5px;
-    row-gap: 2px;
+    gap: 5px;
     margin-bottom: 5px;
     margin-top: 5px;
     height: 15px;
@@ -69,6 +64,7 @@ body {
     margin-bottom: 10px;
     background-color:var(--color_priority2);
 }
+
 .priorytet3 {
     padding: 20px;
     margin-bottom: 10px;
@@ -97,7 +93,7 @@ h1 {
 
 h2 {
     font-family: var(--main_fonts);
-    size: 20px;
+    font-size: 20px;
     color: var(--color_font)
 }
 
