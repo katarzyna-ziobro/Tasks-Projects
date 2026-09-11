@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+*.log
+node_modules/
+fast-api-backend/
+
+#kube config and secrets
+*config.yaml
+*secrets.yaml
+
+#vs code 
+.vscode/
+
